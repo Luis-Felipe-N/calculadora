@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/scss/style.css">
+
+    <title>Calculator app</title>
+
+</head>
+
+<body class="theme1">
+
+    <main class="wrapper-calc">
+        <header class="navegacao">
+            <div class="logo">
+                <h3>calc</h3>
+            </div>
+
+            <div class="container-theme">
+                <span class="container-theme__title">Theme</span>
+
+                <div class="container-theme__menu-theme">
+                    <div class="menu-theme__opction">
+                        <span class="menu-theme__opction-label">1 2 3</span>
+
+                        <input type="radio" name="themes" value="theme1" id="theme1">
+                        <input type="radio" name="themes" value="theme2" id="theme2">
+                        <input type="radio" name="themes" value="theme3" id="theme3">
+                        <span class="menu-theme__opction-check">
+                            <label for="theme1"></label>
+                            <label for="theme2"></label>
+                            <label for="theme3"></label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="display">
+            <input data-js="input-display" type="text" placeholder="399,981">
+        </div>
+
+        <div class="teclas">
+            <div class="row-keys">
+                <button class="keys-number">7</button>
+                <button class="keys-number">8</button>
+                <button class="keys-number">9</button>
+                <button class="clear clearOnly">del</button>
+            </div>
+            <div class="row-keys">
+                <button class="keys-number">4</button>
+                <button class="keys-number">5</button>
+                <button class="keys-number">6</button>
+                <button class="operator">+</button>
+            </div>
+            <div class="row-keys">
+                <button class="keys-number">1</button>
+                <button class="keys-number">2</button>
+                <button class="keys-number">3</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="row-keys">
+                <button class="">.</button>
+                <button class="keys-number">0</button>
+                <button class="operator">/</button>
+                <button class="operator">x</button>
+            </div>
+            <div class="row-keys">
+                <button class="clear reset">reset</button>
+                <button class="equal">=</button>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/theme.js"></script>
+</body>
+
+</html>

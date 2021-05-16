@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+body.theme2 {
+  --main-bgc: hsl(0, 0%, 90%);
+  --keypad-bgc: hsl(0, 5%, 81%);
+  --screeen-bgc: hsl(0, 0%, 93%);
+  --key-bgc-del: hsl(185, 42%, 37%);
+  --key-shadow-del:hsl(185, 58%, 25%);
+  --red-bgc:hsl(25, 98%, 40%);
+  --key-shadow-equal: hsl(25, 99%, 27%);
+  --key-bgc: hsl(45, 7%, 89%);
+  --key-shadow:  hsl(35, 11%, 61%);
+  --text-clr: hsl(60, 10%, 19%);
+  --dark-blue-text: hsl(60, 10%, 19%);
+  --btn-equal-clr: #ffffff;
+  --btn-clear-clr: #ffffff;
+}
+
+body.theme3 {
+  --main-bgc: hsl(268, 75%, 9%);
+  --keypad-bgc: hsl(268, 71%, 12%);
+  --screeen-bgc: hsl(268, 71%, 12%);
+  --key-bgc-del: hsl(281, 89%, 26%);
+  --key-shadow-del:hsl(285, 91%, 52%);
+  --red-bgc:hsl(176, 100%, 44%);
+  --key-shadow-equal: hsl(177, 92%, 70%);
+  --key-bgc: hsl(268, 47%, 21%);
+  --key-shadow:  hsl(290, 70%, 36%);
+  --text-clr: hsl(52, 100%, 62%);
+  --dark-blue-text: hsl(60, 10%, 19%);
+  --btn-equal-clr: hsl(198, 20%, 13%);
+  --btn-clear-clr: #ffffff;
+}
+
+body.theme1 {
+  --main-bgc: hsl(222, 26%, 31%);
+  --keypad-bgc: #232c43;
+  --screeen-bgc: #182034;
+  --key-bgc-del: #637097;
+  --key-shadow-del:#404e72;
+  --red-bgc:#d03f2f;
+  --key-shadow-equal: #93261a;
+  --key-bgc: hsl(30, 25%, 89%);
+  --key-shadow:  hsl(28, 16%, 65%);
+  --text-clr: #ffffff;
+  --dark-blue-text: hsl(221, 14%, 31%);
+  --btn-equal-clr: #ffffff;
+  --btn-clear-clr: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bgc);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.wrapper-calc {
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.wrapper-calc .navegacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--text-clr);
+}
+
+.wrapper-calc .navegacao .logo {
+  font-size: 1.5rem;
+}
+
+.wrapper-calc .navegacao .container-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1rem;
+}
+
+.wrapper-calc .navegacao .container-theme__title {
+  font-size: .9rem;
+}
+
+.wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction {
+  text-align: center;
+}
+
+.wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction input {
+  visibility: hidden;
+  display: none;
+}
+
+.wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-check {
+  position: relative;
+  width: 75px;
+  height: 25px;
+  background-color: var(--keypad-bgc);
+  border-radius: 25px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-check::before {
+  content: '';
+  width: calc(70% / 3);
+  height: 70%;
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--red-bgc);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-check label {
+  display: block;
+  width: calc(100% / 3);
+  height: 70%;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-label {
+  letter-spacing: 5px;
+}
+
+.wrapper-calc .display input {
+  height: 120px;
+  width: 100%;
+  text-align: right;
+  font-size: 3rem;
+  color: var(--text-clr);
+  background-color: var(--screeen-bgc);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.wrapper-calc .teclas {
+  background-color: var(--keypad-bgc);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5rem;
+  gap: 1.4rem;
+  padding: 1.4rem;
+}
+
+.wrapper-calc .teclas .row-keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.wrapper-calc .teclas .row-keys button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid var(--key-shadow);
+  color: var(--dark-blue-text);
+  -webkit-transition: .1s;
+  transition: .1s;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.wrapper-calc .teclas .row-keys button:active {
+  border-width: 0px;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.wrapper-calc .teclas .row-keys .keys-number {
+  font-size: 1.4rem;
+}
+
+.wrapper-calc .teclas .row-keys .clear {
+  font-size: 1rem;
+  background-color: var(--key-bgc-del);
+  border-bottom: 4px solid var(--key-shadow-del);
+  color: var(--btn-clear-clr);
+  text-transform: uppercase;
+}
+
+.wrapper-calc .teclas .row-keys .equal {
+  background-color: var(--red-bgc);
+  border-bottom: 4px solid var(--key-shadow-equal);
+  color: var(--btn-equal-clr);
+}
+
+.wrapper-calc .teclas .row-keys .operator {
+  font-size: 1.5rem;
+}
+
+body.theme1 .wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-check::before {
+  left: 5px;
+}
+
+body.theme2 .wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-check::before {
+  left: calc(70% / 2);
+}
+
+body.theme3 .wrapper-calc .navegacao .container-theme__menu-theme .menu-theme__opction-check::before {
+  left: calc(70% / 1);
+}
+/*# sourceMappingURL=style.css.map */

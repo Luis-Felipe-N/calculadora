@@ -1,0 +1,59 @@
+body.theme2 {
+    --main-bgc: hsl(0, 0%, 90%);
+    --keypad-bgc: hsl(0, 5%, 81%);
+    --screeen-bgc: hsl(0, 0%, 93%);
+
+    // keys
+    --key-bgc-del: hsl(185, 42%, 37%);
+    --key-shadow-del:hsl(185, 58%, 25%);
+    --red-bgc:hsl(25, 98%, 40%);
+    --key-shadow-equal: hsl(25, 99%, 27%);
+    --key-bgc: hsl(45, 7%, 89%);
+    --key-shadow:  hsl(35, 11%, 61%);
+
+    // text
+    --text-clr: hsl(60, 10%, 19%);
+    --dark-blue-text: hsl(60, 10%, 19%);
+    --btn-equal-clr: #ffffff;
+    --btn-clear-clr: #ffffff;
+}
+    
+body.theme3 {
+    --main-bgc: hsl(268, 75%, 9%);
+    --keypad-bgc: hsl(268, 71%, 12%);
+    --screeen-bgc: hsl(268, 71%, 12%);
+
+    // keys
+    --key-bgc-del: hsl(281, 89%, 26%);
+    --key-shadow-del:hsl(285, 91%, 52%);
+    --red-bgc:hsl(176, 100%, 44%);
+    --key-shadow-equal: hsl(177, 92%, 70%);
+    --key-bgc: hsl(268, 47%, 21%);
+    --key-shadow:  hsl(290, 70%, 36%);
+
+    // text
+    --text-clr: hsl(52, 100%, 62%);
+    --dark-blue-text: hsl(60, 10%, 19%);
+    --btn-equal-clr: hsl(198, 20%, 13%);
+    --btn-clear-clr: #ffffff;
+}
+
+body.theme1 {
+    --main-bgc: hsl(222, 26%, 31%);
+    --keypad-bgc: #232c43;
+    --screeen-bgc: #182034;
+
+    // keys
+    --key-bgc-del: #637097;
+    --key-shadow-del:#404e72;
+    --red-bgc:#d03f2f;
+    --key-shadow-equal: #93261a;
+    --key-bgc: hsl(30, 25%, 89%);
+    --key-shadow:  hsl(28, 16%, 65%);
+
+    // text
+    --text-clr: #ffffff;
+    --dark-blue-text: hsl(221, 14%, 31%);
+    --btn-equal-clr: #ffffff;
+    --btn-clear-clr: #ffffff;
+}
