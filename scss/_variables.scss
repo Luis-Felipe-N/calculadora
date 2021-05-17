@@ -1,3 +1,11 @@
+:root {
+    --padding-key: 1.4rem;
+
+    @media (max-width: 750px) {
+        --padding-key: .7rem;    
+}
+}
+
 body.theme2 {
     --main-bgc: hsl(0, 0%, 90%);
     --keypad-bgc: hsl(0, 5%, 81%);
@@ -57,3 +65,5 @@ body.theme1 {
     --btn-equal-clr: #ffffff;
     --btn-clear-clr: #ffffff;
 }
+
+

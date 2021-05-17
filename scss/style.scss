@@ -116,12 +116,12 @@ body {
         display: flex;
         flex-direction: column;
         border-radius: .5rem;
-        gap: 1.4rem;
-        padding: 1.4rem;
+        gap: var(--padding-key);
+        padding: var(--padding-key);
 
         .row-keys {
             display: flex;
-            gap: 1.4rem;
+            gap: var(--padding-key);
 
             button {
                 width: 100%;
