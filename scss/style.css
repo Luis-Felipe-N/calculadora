@@ -170,7 +170,17 @@ body {
   letter-spacing: 5px;
 }
 
+.wrapper-calc .display {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.wrapper-calc .display:focus-within {
+  border: solid 1px var(--key-bgc-del);
+}
+
 .wrapper-calc .display input {
+  outline: none;
   height: 120px;
   width: 100%;
   text-align: right;
@@ -178,7 +188,6 @@ body {
   color: var(--text-clr);
   background-color: var(--screeen-bgc);
   border: none;
-  border-radius: 5px;
   padding: 1rem;
 }
 

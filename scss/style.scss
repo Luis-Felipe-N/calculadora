@@ -89,7 +89,16 @@ body {
         }
     }
 
-    .display input {
+    .display {
+        overflow: hidden;
+        border-radius: 5px;
+
+        &:focus-within {
+            border: solid 1px var(--key-bgc-del);
+        }
+        
+     input {
+        outline: none;
         height: 120px;
         width: 100%;
         text-align: right;
@@ -97,8 +106,9 @@ body {
         color: var(--text-clr);
         background-color: var(--screeen-bgc);
         border: none;
-        border-radius: 5px;
         padding: 1rem;
+    }
+
     }
 
     .teclas {
